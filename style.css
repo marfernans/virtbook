@@ -60,7 +60,7 @@ a:hover {
 }
 
 .header__container {
-    box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.4);
+    box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2);
 }
 
 
@@ -96,7 +96,7 @@ a:hover {
     width: 20em;
     height: 15em;
     border-radius: 17px;
-    box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.4);
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.4);
    
 }
 
