@@ -61,6 +61,34 @@ a:hover {
 }
 
 
+.search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    margin: 5rem 0 0;
+}
+
+.shearch__title {
+    margin: 0.5rem;
+    font-size: 1.2em;
+    color: var(--gray-1);
+}
+.input {
+    border:  2px solid var(--gray-1);
+    border-radius: 25px;
+    color: var(--gray-1);
+    font-size: 1em;
+    height: 2em;
+    padding: 0 0.5em;
+    width: 60%;
+     outline: none;
+}
+::placeholder {
+    color: var(--gray-1);
+}
+
 
 
 .container {
@@ -68,8 +96,7 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    padding-top: 3.5rem ;
+    margin: 1.5rem 0;
 }
 
 .content__card {
