@@ -1,0 +1,22 @@
+{
+  "name": "virtbook",
+  "version": "1.0.0",
+  "description": "SPA- Virtual library that contains books by the best writers on different literary topics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariiius/virtbook.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Mario Fernandez S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariiius/virtbook/issues"
+  },
+  "homepage": "https://github.com/mariiius/virtbook#readme"
+}
