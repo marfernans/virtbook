@@ -1,1 +1,3 @@
-console.log('Hello VirtBook');
+import router from './routes';
+
+window.addEventListener('load', router);

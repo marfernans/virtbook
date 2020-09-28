@@ -2,19 +2,21 @@
 const Home =  () =>  {
 
     const view = ` 
-    <section class="container">
 
-    <div class="content__card">
 
-        <div class="content__card--texts">
-            <a href="#/1/">
-            <img src="image" alt="portada">
-            <h1 class="title">Title Book</h1>
-            <p class="author">Name author</p>
+        <div class="books__covers">
+
+            <article class="books__items">
+                <a href="#/1/"> 
+                <img src="image" alt="cover">
+                </a>
+                <h2 class="title">Title Book</h2>
+                <span class="author"> Name author</span>
+            </article>
+            
         </div>
-    </div>
 
-    </section>
+
 
     `;
 
@@ -23,4 +25,4 @@ const Home =  () =>  {
 };
 
 
-export default Home;
+    export default Home;
