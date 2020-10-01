@@ -5,19 +5,19 @@ const Header = () => {
             <div class="Header__logo">
                 <h1>
                     <a href="/">
-                        VIRTBOOK
+                        VIRTBOOK  
                     </a>
                 </h1>
             </div>
         
             <div class="Header__nav">
-                <a href=""#/about/>
+                <a href="#/about">
                 ABOUT
                 </a>
             </div>
         </div>
 
-    ` ;
+    `;
 
     return view;
 };

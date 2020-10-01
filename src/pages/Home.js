@@ -1,26 +1,34 @@
 
-const Home =  () =>  {
+import getData from '../utils/getData';
 
-    const view = ` 
+const Home = async () =>  {
 
+    const books = await getData();
+    console.log(books);
+    // const view = ` 
 
-        <div class="books__covers">
+    //     <div class="books__covers">
+    //         ${books.results.map(books => `
 
-            <article class="books__items">
-                <a href="#/1/"> 
-                <img src="image" alt="cover">
-                </a>
-                <h2 class="title">Title Book</h2>
-                <span class="author"> Name author</span>
-            </article>
+    //         <article class="books__items">
             
-        </div>
+    //         <a href="#/${book.id}/"> 
+    //         <img src="${book.image}"alt="${book.name}">
 
+    //             <h2 class="title">${book.name}/h2>
 
+    //             </a>
+        
+    //         </article>
 
-    `;
+    //         `).join('')}
+            
+            
+    //     </div>
 
-    return view
+    // `;
+
+    // return view;
 
 };
 
