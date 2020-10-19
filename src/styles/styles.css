@@ -1,0 +1,134 @@
+/*=====RESET     position: fixed;
+    top: 0;
+    width: 100%=====*/
+
+    html {
+        box-sizing: border-box;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+    
+    
+    *,
+    *:after,
+    *:before { 
+        padding: 0;
+        margin: 0;
+        box-sizing: inherit;
+    }
+    
+    img {
+        max-width : 100%;
+    }
+    
+    a {
+        text-decoration : none;
+    }
+    
+    a:hover {
+        text-decoration : underline;
+    }
+    
+        /*=====COLORS=====*/
+    
+    :root {
+       --gray-3 : #e7e7e4;
+       --gray-2 : #828282;
+       --gray-1 : #4F4F4F;
+       --orange : #ff9900;
+    }
+    
+    /*=======================================*/
+    
+    
+    
+    
+    /*=====HEADER=====*/
+    
+    
+    
+    .header__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 0.8em;
+        height: 5rem;
+        width: 100%;
+        color: var(--gray-1);
+        background-color: var(--gray-1);  
+        box-shadow: 1px 1px 2px 0 rgba(0,0,0,0.2); 
+        margin-bottom: 0.5rem;
+      
+    }
+    
+    .logo a {
+        color: var(--orange);
+        font-size: 1.5em;
+        font-family: 'Zilla Slab', serif;
+        font-weight: 700;
+    }
+    
+    .shearch__title {
+        font-size: 1.2em;
+        color: var(--gray-1);
+    }
+    
+    .input {
+        border:  1px solid var(--gray-1);
+        border-radius: 3px;
+        color: var(--gray-1);
+        font-size: 1em;
+        height: 2.5em;
+        padding: 0 1.5em;
+        outline: none;
+    }
+    ::placeholder {
+        color: var(--gray-1);
+    }
+    
+    /*=====HEADER END=====*/
+
+/*================================*/
+
+    /*=====SECTION HERO=====*/
+
+.content__hero 
+.image-hero {
+   width: 100%;
+   height: 400px;
+   display: block;
+   position: relative;
+   object-fit: cover;  
+
+}
+
+
+.title__hero {
+   position: absolute;
+   background-color: rgba(0,0,0,0.5);
+   top: 0;
+   width: 100%;
+   height: 400px;
+   margin-top: 90px;
+   padding: 9em;
+   text-align: center;
+   font-family: 'Zilla Slab', serif;
+
+   
+}
+
+.title-text {
+   font-size: 1.8em;
+   font-weight: 700;
+   color: var(--gray-3); 
+
+}
+
+.subtitle-text {
+   font-size: 1.3em;
+   font-weight: 300;
+   color: var(--orange); 
+
+}
+
+/*=====SECTION HERO END =====*/

@@ -1,4 +1,11 @@
-const Books = () => {
+import getHash from '../utils/getHash';
+import getData from '../utils/getData';
+
+const Book =  async ()  => {
+
+    const id = getHash();
+
+    const  book = await getData(id);
 
     const view = ` 
 
@@ -6,8 +13,8 @@ const Books = () => {
 
             <article class="books__card">
             
-                <img src="image" alt="name">
-                <h2>Author</h2>
+                <img src="${book.picture}" alt="${book.name}">
+                <h2>${book.title}</h2>
 
             </article>
 
@@ -28,4 +35,4 @@ const Books = () => {
     return view;   
 };
 
-    export default Books;
+    export default Book;
