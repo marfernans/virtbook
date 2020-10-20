@@ -7,27 +7,35 @@ const Home = async () =>  {
 
     const view = ` 
 
-        <div class="books__covers">
+    <div class="detaill">
+    <h1 class="title__detaill">Featured Books</h1>
 
-            ${books.entries.map(book => `
+    </div>
+    
+    <main class="main__container">
 
-            <article class="books__items">
-            
+               
+
+    ${books.entries.map(book => `
+
+    <section class="container-card">
+
             <a href="#/${book.id}/">
 
-            <img src="${book.picture.url}"alt="${book.name}">
+            <img class="content__card" src="${book.picture.url}"alt="${book.name}">
 
-                <h2 class="title">${book.title}</h2>
-                
-                <span class="last__update">${book.last_update}</span>
             </a>
-        
-            </article>
+                
+                <div class="text-title">
+                <h1 class="title">${book.title}</h1>
+                </div>
 
-            `).join('')}
-            
-            
-        </div>
+                  
+        </section>
+
+        `).join('')}
+
+    </main>
 
  `;
 
