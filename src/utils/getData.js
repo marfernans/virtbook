@@ -1,4 +1,5 @@
-const API = "http://openlibrary.org/people/george08/lists/OL97L/seeds.json";
+const API = "https://www.googleapis.com/books/v1/volumes?q=${book";
+
 
 const getData = async (id) => {
 
