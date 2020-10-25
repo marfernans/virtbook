@@ -6,27 +6,24 @@ const Home = async () =>  {
     const books = await getData();
 
     const view = ` 
+        <main class="main__container">
+            
+        ${books.items.map(book => `
 
- 
-    <main class="main__container">
+        <section class="container-card">
         
-    ${books.items.map(book => `
+        <a href="#/book/${book.id}/">
+            <img class="content__card" src="${book.volumeInfo.imageLinks.thumbnail}" alt="${book.title}">
 
-    <section class="container-card">
-
-        <a href="#/${book.id} /">
-           <img class="content__card" src="${book.volumeInfo.imageLinks.thumbnail}"alt="${book.name}">
-
-            <div class="text-title">
-                <h2 class="title">${book.volumeInfo.authors}</h2>
-            </div>      
-        </a>           
-    </section>
+                <div class="text-title">
+                    <h2 class="title">${book.volumeInfo.authors}</h2>
+                </div>      
+            </a>           
+        </section>
 
  `).join('')}
 
-    </main>
- `;
+    </main>`;
 
     return view;
 
