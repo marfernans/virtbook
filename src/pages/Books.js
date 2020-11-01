@@ -1,6 +1,4 @@
-import getHash from '../utils/getHash';
 
-import getData from '../utils/getData';
 
 const Book = async () => {
 
