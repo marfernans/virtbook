@@ -13,11 +13,7 @@ const Home = async () =>  {
         <section class="container-card">
         
         <a href="#/book/${book.id}/">
-            <img class="content__card" src="${book.volumeInfo.imageLinks.thumbnail}" alt="${book.title}">
-
-                <div class="text-title">
-                    <h2 class="title">${book.volumeInfo.authors}</h2>
-                </div>      
+            <img class="content__card" src="${book.volumeInfo.imageLinks.thumbnail}" alt="${book.title}">  
             </a>           
         </section>
 
