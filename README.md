@@ -5,7 +5,7 @@
 ### El proyecto se encuentra en su primera fase de desarrollo que tiene como ojetivo lanzar un MVP en las próximas semanas. 
 
 - ### Versión Desktop
- ![](https://firebasestorage.googleapis.com/v0/b/pelagic-berm-245418.appspot.com/o/imgoldnewpaper%2FCaptura%20de%20pantalla%20de%202020-10-16%2020-19-53.png?alt=media&token=563c534e-49e6-4eb8-ba56-fd218dc34133)
+ ![](https://firebasestorage.googleapis.com/v0/b/pelagic-berm-245418.appspot.com/o/imgoldnewpaper%2Fvirtbiik%20ok.png?alt=media&token=f3b8a36d-9a46-482b-9c7f-785fdeaeaaf8)
 
  ### 🚀 
  #### Si deseas tener una copia  de este proyecto en tu máquina local para propósitos de desarrollo y pruebas lee las sigiente instruciones.
