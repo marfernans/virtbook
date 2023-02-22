@@ -34,3 +34,19 @@ img {
     max-width: 100%;
     height: auto;
 }
+.error {
+    padding: 1rem;
+    font-size: 150%;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color:red;
+}
+
+.loader {
+    margin: 1rem auto;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+}
+
