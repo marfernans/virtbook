@@ -12,6 +12,5 @@ export function reqajax (props){
             `;
 
             console.log(err);
-
         })
 }

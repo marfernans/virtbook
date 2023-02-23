@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-    color: blueviolet;
+    color: rgb(255, 0, 230);
 }
 
 
@@ -56,6 +56,13 @@ img {
     font-size: 1rem;
 }
 
+.grid-fluid {
+    margin: 1rem auto;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px, 1fr));
+}
+
 .header {
     padding: 0.5rem;
     position: sticky;
@@ -75,3 +82,14 @@ img {
     height: 3rem;
 }
 
+.post-card {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80%;
+    background-color:silver
+}
+
+.post-card p {
+    display: flex;
+    justify-content: space-between;
+}
