@@ -26,7 +26,7 @@ export function Router(){
         }) 
     }else if (hash.includes("#/search")) {
         $posts.innerHTML = "<h2>The Search</h2>"  
-    }else if (hash === "#/contacto"){
+    }else if (hash === "#/contact"){
         $posts.innerHTML = "<h2>The Contact</h2>"
     }else{
         $posts.innerHTML = "<h2>The previous content of the post</h2>"
