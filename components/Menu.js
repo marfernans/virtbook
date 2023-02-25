@@ -3,7 +3,7 @@ export function Menu() {
 
     $menu.classList.add("menu")
     $menu.innerHTML = `    
-    <a href="#/">Home</a>
+    <a href="#/">Ínicio</a>
     <span>-</span>
     <a href="#/search">Búsqueda</a>
     <span>-</span>
