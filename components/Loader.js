@@ -1,6 +1,5 @@
 export function Loader(){
-    const d = document,
-    $loader = d.createElement("img");
+    const $loader = document.createElement("img");
     $loader.src = "./public/loading.svg";
     $loader.alt = "LOADING...";
     $loader.classList.add("loader");

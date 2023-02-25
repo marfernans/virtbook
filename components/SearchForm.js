@@ -1,7 +1,6 @@
 export function SearchForm(){
-    const d = document,
-    $form = d.createElement("form"),
-    $input = d.createElement("input")
+    const $form = document.createElement("form"),
+    $input = document.createElement("input")
 
     $form.classList.add("form-s")
     $input.name = "search"
