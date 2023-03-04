@@ -8,7 +8,7 @@ import { Post } from "./Post.js";
 
 export async function Router() {
     const d = document,
-    $main = d.getElementById("main");
+        $main = d.getElementById("main");
     //win = window;
 
     let { hash } = location;
@@ -17,7 +17,7 @@ export async function Router() {
     $main.innerHTML = null;
 
     if (!hash || hash === "#/") {
-       await reqajax({
+        await reqajax({
             url: apiendpoint.POSTS,
             cbSuccess: (posts) => {
                 console.log(posts);
@@ -29,13 +29,22 @@ export async function Router() {
         })
         console.log(apiendpoint.POST)
     } else if (hash.includes("#/search")) {
-        $main.innerHTML = "<h2>The Search</h2>"
+        let query = localStorage.getItem("userSearch");
+
+        if (!query) return false;
+
+        await reqajax({
+            url: `${apiendpoint.SEARCH}${query}`,
+            cbSuccess:(search) => {
+                console.log(search);
+            }
+        })
 
     } else if (hash === "#/contact") {
         $main.innerHTML = "<h2>The Contact</h2>"
 
     } else {
-      
+
         await reqajax({
             url: `${apiendpoint.POST}/${localStorage.getItem("postId")}`,
             cbSuccess: (post) => {
@@ -47,13 +56,8 @@ export async function Router() {
                 $main.innerHTML = html;*/
             }
         })
-        
+
     }
-    
-    
-    //console.log(`${apiendpoint.POST} ${localStorage.getItem("postId")}`)
 
-
-    
     d.querySelector(".loader").style.display = "none"
 }
