@@ -16,7 +16,7 @@ body {
 }
 
 a {
-    color: rgb(132, 204, 49);
+    color: #0156d8;;
     transition: color 0.4s ease;
 }
 
@@ -44,12 +44,12 @@ img {
 }
 
 
-.form-s {
+.s-form {
     margin: auto;
     text-align: center;
 }
 
-.form-s input {
+.s-form input {
     display: block;
     margin: auto;
     padding: 0.25rem;
@@ -92,4 +92,36 @@ img {
 .post-card p {
     display: flex;
     justify-content: space-between;
+}
+
+.post-p {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 80%;
+    background-color:rgb(222, 222, 219)
+}
+
+.post-p > hr {
+    border: 1px solid #0156d8;
+    margin: 2.5rem auto;
+    width: 80%;
+}
+
+.post-p time {
+    margin:  1rem auto;
+    display: block;
+    
+}
+
+.post-p > article {
+    padding:  0 2rem;
+}
+
+.post-p img,
+.post-p audio,
+.post-p iframe,
+.post-p video {
+    margin: auto;
+    display: block;
+    max-width: 100%;
 }
